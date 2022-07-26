@@ -1,5 +1,4 @@
 import axios from "axios";
-import { response } from "msw";
 import { useEffect, useState } from "react";
 import ScoopOptions from "./ScoopOptions";
 import Row from "react-bootstrap/Row";
@@ -22,6 +21,7 @@ export default function Options({ optionType }) {
   }, [optionType]);
 
   if (error) {
+    // @ts-ignore
     return <AlertBanner />;
   }
   const ItemComponent = optionType === "scoops" ? ScoopOptions : ToppingOption;

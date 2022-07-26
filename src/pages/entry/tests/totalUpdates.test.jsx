@@ -1,7 +1,7 @@
 import { render, screen } from "../../../test-utils/testing-library-utils";
 import userEvent from "@testing-library/user-event";
 import Options from "../Option";
-import { OrderDetailsProvider } from "../../../contexts/OrderDetails";
+//import { OrderDetailsProvider } from "../../../contexts/OrderDetails";
 import OrderEntry from "../OrderEntry";
 
 test("update scoop subtotal when scoops change", async () => {

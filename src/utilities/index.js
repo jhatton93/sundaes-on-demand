@@ -2,7 +2,7 @@
  *@function formatCurrency
  *Format number as currency (US Dollars)
  *
- *@param {number} amount
+ *@param {number} currency
  *@returns {string} number formatted as currency
  *
  *@example
@@ -16,10 +16,10 @@
  */
 
 //format number as currency
-export function formatCurrency(amount) {
+export function formatCurrency(currency) {
   return new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
     minimumFractionDigits: 2,
-  }).format(amount);
+  }).format(currency);
 }
